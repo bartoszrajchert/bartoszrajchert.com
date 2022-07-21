@@ -1,8 +1,5 @@
 module.exports = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx}',
-    './src/components/**/*.{js,ts,jsx,tsx}'
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     screens: {
       sm: '480px',
@@ -15,6 +12,7 @@ module.exports = {
       black: '#000',
       white: '#FFF',
       background: '#012A35',
+      placeholder: '#CEE8E8',
       accent: '#3ABCE4',
       button: {
         DEFAULT: '#01242E',
@@ -62,7 +60,8 @@ module.exports = {
       40: '2.5rem',
       48: '3rem',
       64: '4rem',
-      80: '5rem'
+      80: '5rem',
+      112: '7rem'
     },
     borderRadius: (theme) => theme('spacing'),
     extend: {}

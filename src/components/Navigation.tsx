@@ -1,4 +1,5 @@
 import Button from '@/components/Button';
+import { Menu2, Sun } from 'tabler-icons-react';
 
 const Navigation = () => {
   return (
@@ -8,13 +9,17 @@ const Navigation = () => {
           <img src="/logo.svg" alt="Logo" />
         </div>
         <div className="lg:hidden">
-          <Button text="Menu" />
+          <Button type="icon">
+            <Menu2 />
+          </Button>
         </div>
-        <div className="hidden lg:space-x-8 lg:block">
-          <Button text="Projects" />
-          <Button text="About" />
-          <Button text="Resume" />
-          <Button text="Icon dark mode" />
+        <div className="hidden lg:space-x-8 lg:flex">
+          <Button>Projects</Button>
+          <Button>About</Button>
+          <Button>Resume</Button>
+          <Button type="icon">
+            <Sun />
+          </Button>
         </div>
       </div>
     </nav>

@@ -1,11 +1,23 @@
+import React from 'react';
+import clsx from 'clsx';
+
 interface Props {
-  text: string;
+  children: React.ReactNode;
+  type?: 'text' | 'icon';
 }
 
-const Button = ({ text }: Props) => {
+const Button = ({ children, type = 'text' }: Props) => {
   return (
-    <button className="bg-button hover:bg-button-hover active:bg-button-active py-12 px-24 text-white rounded-4">
-      {text}
+    <button
+      className={clsx(
+        'bg-button hover:bg-button-hover active:bg-button-active py-12 text-white rounded-4',
+        {
+          'px-24': type === 'text',
+          'px-12': type === 'icon'
+        }
+      )}
+    >
+      {children}
     </button>
   );
 };
