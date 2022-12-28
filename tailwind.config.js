@@ -12,6 +12,10 @@ module.exports = {
       black: '#000',
       white: '#FFF',
       background: '#012A35',
+      darkBackgroundGradient: {
+        from: '#021920',
+        to: '#061F25'
+      },
       placeholder: '#CEE8E8',
       accent: '#3ABCE4',
       button: {

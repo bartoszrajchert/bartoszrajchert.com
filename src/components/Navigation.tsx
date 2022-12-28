@@ -1,12 +1,13 @@
 import Button from '@/components/Button';
 import { Menu2, Sun } from 'tabler-icons-react';
+import InlineSVG from 'react-inlinesvg';
 
 const Navigation = () => {
   return (
-    <nav className="fixed top-24 left-24 right-24 lg:left-80 lg:right-80">
+    <nav className="fixed z-50 top-12 lg:top-24 left-24 right-24 lg:left-80 lg:right-80">
       <div className="flex justify-between items-center">
-        <div>
-          <img src="/logo.svg" alt="Logo" />
+        <div className="h-64 lg:h-80">
+          <InlineSVG src="/logo.svg" width="auto" height="auto" />
         </div>
         <div className="lg:hidden">
           <Button type="icon">
