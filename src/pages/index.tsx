@@ -11,8 +11,10 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <h1 className="text-header-lg">Hello there 👋, I’m Bartosz!</h1>
-        <p className="text-body-xl">
+        <h1 className="text-header-md mb-3 lg:text-header-lg">
+          Hello there 👋, I’m Bartosz!
+        </h1>
+        <p className="text-body-lg lg:text-body-xl">
           Digital Product Designer & Front-End Developer <br />
           Currently working as Creative Technologist at{' '}
           <span className="text-blue-normal">HSBC</span>
