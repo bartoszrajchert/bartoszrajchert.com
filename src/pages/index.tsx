@@ -1,5 +1,12 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Button from '@/components/Button';
+import {
+  IconAt,
+  IconBrandGithub,
+  IconBrandLinkedin,
+  IconBrandMedium
+} from '@tabler/icons';
 
 const Home: NextPage = () => {
   return (
@@ -11,14 +18,30 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <h1 className="text-header-md mb-3 lg:text-header-lg">
-          Hello there 👋, I’m Bartosz!
-        </h1>
-        <p className="text-body-lg lg:text-body-xl">
-          Digital Product Designer & Front-End Developer <br />
-          Currently working as Creative Technologist at{' '}
-          <span className="text-blue-normal">HSBC</span>
-        </p>
+        <section className="my-6 lg:my-24">
+          <h1 className="text-header-md mb-3 lg:text-header-lg">
+            Hello there 👋, I’m Bartosz!
+          </h1>
+          <p className="text-body-lg lg:text-body-xl">
+            Digital Product Designer & Front-End Developer <br />
+            Currently working as Creative Technologist at{' '}
+            <span className="text-blue-normal">HSBC</span>
+          </p>
+          <div className="flex gap-3 mt-4 lg:mt-6">
+            <Button onClick={() => console.log('At')}>
+              <IconAt />
+            </Button>
+            <Button onClick={() => console.log('Linkedin')}>
+              <IconBrandLinkedin />
+            </Button>
+            <Button onClick={() => console.log('Github')}>
+              <IconBrandGithub />
+            </Button>
+            <Button onClick={() => console.log('Medium')}>
+              <IconBrandMedium />
+            </Button>
+          </div>
+        </section>
       </main>
     </>
   );
