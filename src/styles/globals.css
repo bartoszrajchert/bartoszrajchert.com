@@ -6,6 +6,12 @@
   html {
     font-family: IBM Plex Sans, system-ui, sans-serif;
   }
+
+  /*body {*/
+  /*  background-image: url("/assets/background-ambient.svg");*/
+  /*  background-position: top center;*/
+  /*  background-repeat: no-repeat;*/
+  /*}*/
 }
 
 .ham {
