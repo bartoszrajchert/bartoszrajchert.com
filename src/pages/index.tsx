@@ -1,13 +1,13 @@
-import type { NextPage } from 'next';
-import Head from 'next/head';
-import Button from '@/components/Button';
 import {
   IconAt,
   IconBrandGithub,
   IconBrandLinkedin,
   IconBrandMedium
 } from '@tabler/icons';
-import ProjectTile from '@/components/ProjectTile';
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Button from '@components/Button';
+import ProjectTile from '@components/ProjectTile';
 
 const Home: NextPage = () => {
   return (
