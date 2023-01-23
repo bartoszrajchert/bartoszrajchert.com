@@ -15,7 +15,7 @@ export default function Document() {
           rel="stylesheet"
         />
       </Head>
-      <body className="bg-background mx-5">
+      <body className="bg-background mx-5 max-w-[1120px] lg:mx-auto lg:px-4 xl:px-0">
         <Main />
         <NextScript />
       </body>

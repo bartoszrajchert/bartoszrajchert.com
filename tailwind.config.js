@@ -9,6 +9,9 @@ module.exports = {
       blue: {
         light: '#E7F3FF',
         normal: '#0C88FA'
+      },
+      grey: {
+        1: '#575252'
       }
     },
     fontSize: {
@@ -52,6 +55,10 @@ module.exports = {
       'body-md': ['13px', '140%'],
       'body-sm': ['10px', '120%'],
       base: ['16px', '160%']
+    },
+    borderRadius: {
+      DEFAULT: '4px',
+      '8px': '8px',
     },
     extend: {}
   },
