@@ -7,6 +7,7 @@ import {
   IconBrandLinkedin,
   IconBrandMedium
 } from '@tabler/icons';
+import ProjectTile from '@/components/ProjectTile';
 
 const Home: NextPage = () => {
   return (
@@ -18,7 +19,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <section className="my-6 lg:my-24">
+        <section className="mt-12 mb-16 lg:my-24">
           <h1 className="text-header-md mb-3 lg:text-header-lg">
             Hello there 👋, I’m Bartosz!
           </h1>
@@ -40,6 +41,24 @@ const Home: NextPage = () => {
             <Button onClick={() => console.log('Medium')}>
               <IconBrandMedium />
             </Button>
+          </div>
+        </section>
+
+        <section>
+          <h2 className="text-title-md text-grey-1 uppercase mb-4">Projects</h2>
+          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-x-6 lg:gap-y-12">
+            <ProjectTile
+              title="Meeting Device Testing Experience (Coming Soon)"
+              tags={['HSBC', 'Product Design', 'Bank']}
+            />
+            <ProjectTile
+              title="Meeting Device Testing Experience (Coming Soon)"
+              tags={['HSBC', 'Product Design', 'Bank']}
+            />
+            <ProjectTile
+              title="Meeting Device Testing Experience (Coming Soon)"
+              tags={['HSBC', 'Product Design', 'Bank']}
+            />
           </div>
         </section>
       </main>
