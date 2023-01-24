@@ -7,11 +7,13 @@
     font-family: IBM Plex Sans, system-ui, sans-serif;
   }
 
-  /*body {*/
-  /*  background-image: url("/assets/background-ambient.svg");*/
-  /*  background-position: top center;*/
-  /*  background-repeat: no-repeat;*/
-  /*}*/
+  a {
+    @apply text-blue-normal underline;
+  }
+}
+
+.page-width-adjustment {
+  @apply max-w-[1120px] px-5 lg:mx-auto lg:px-4 xl:px-0;
 }
 
 .ham {

@@ -6,12 +6,12 @@ interface Props {
 const ProjectTile = ({ title, tags }: Props) => {
   return (
     <div>
-      <div className="bg-grey-1 rounded-8px h-[308px] border border-black">
+      <div className="h-[308px] rounded-8px border border-black bg-grey-1">
         {/*<img />*/}
       </div>
       <div className="mt-4">
         <div>
-          <p className="text-title-md text-grey-1 uppercase mb-2">
+          <p className="mb-2 text-title-md uppercase text-grey-1">
             {tags.map((value, i) => (
               <span key={value}>
                 {value}
