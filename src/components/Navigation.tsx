@@ -5,8 +5,8 @@ const Navigation = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <nav className="lg:flex justify-between items-center py-4">
-      <div className="flex justify-between items-center">
+    <nav className="items-center justify-between py-4 lg:flex">
+      <div className="flex items-center justify-between">
         <p className="text-header-sm">Bartosz Rajchert</p>
         <svg
           className={clsx('ham hamRotate ham4 lg:hidden', {

@@ -1,13 +1,7 @@
-import {
-  IconAt,
-  IconBrandGithub,
-  IconBrandLinkedin,
-  IconBrandMedium
-} from '@tabler/icons';
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Button from '@components/Button';
 import ProjectTile from '@components/ProjectTile';
+import SocialButtons from '@components/SocialButtons';
 
 const Home: NextPage = () => {
   return (
@@ -19,34 +13,23 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <section className="mt-12 mb-16 lg:my-24">
-          <h1 className="text-header-md mb-3 lg:text-header-lg">
+        <section className="mt-12 mb-16 sm:w-[60%] lg:my-24">
+          <h1 className="mb-3 text-header-md lg:text-header-lg">
             Hello there 👋, I’m Bartosz!
           </h1>
           <p className="text-body-lg lg:text-body-xl">
-            Digital Product Designer & Front-End Developer <br />
-            Currently working as Creative Technologist at{' '}
-            <span className="text-blue-normal">HSBC</span>
+            I’m currently working as Creative Technologist at{' '}
+            <span className="text-blue-normal">HSBC</span>, bridging the gap
+            between Technology and Design using my skills in both fields.
           </p>
-          <div className="flex gap-3 mt-4 lg:mt-6">
-            <Button onClick={() => console.log('At')}>
-              <IconAt />
-            </Button>
-            <Button onClick={() => console.log('Linkedin')}>
-              <IconBrandLinkedin />
-            </Button>
-            <Button onClick={() => console.log('Github')}>
-              <IconBrandGithub />
-            </Button>
-            <Button onClick={() => console.log('Medium')}>
-              <IconBrandMedium />
-            </Button>
+          <div className="mt-4 lg:mt-6">
+            <SocialButtons />
           </div>
         </section>
 
         <section>
-          <h2 className="text-title-md text-grey-1 uppercase mb-4">Projects</h2>
-          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-12 lg:gap-x-6 lg:gap-y-12">
+          <h2 className="mb-4 text-title-md uppercase text-grey-1">Projects</h2>
+          <div className="flex flex-col gap-12 lg:grid lg:grid-cols-2 lg:gap-x-6 lg:gap-y-12">
             <ProjectTile
               title="Meeting Device Testing Experience (Coming Soon)"
               tags={['HSBC', 'Product Design', 'Bank']}

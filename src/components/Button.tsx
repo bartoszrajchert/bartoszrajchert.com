@@ -8,7 +8,7 @@ interface Props {
 const Button = ({ children, onClick }: Props) => {
   return (
     <div
-      className="bg-blue-light text-blue-normal p-3 rounded cursor-pointer"
+      className="cursor-pointer rounded bg-blue-light p-3 text-blue-normal"
       onClick={() => onClick()}
     >
       {children}

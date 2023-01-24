@@ -3,7 +3,7 @@ import InlineSVG from 'react-inlinesvg';
 const BackgroundAmbient = () => {
   return (
     <InlineSVG
-      className="absolute -z-10 top-0 right-0 left-0 w-full h-auto"
+      className="absolute top-0 right-0 left-0 -z-10 h-auto w-full"
       src="/assets/background-ambient.svg"
     />
   );
