@@ -23,7 +23,7 @@ const Footer = () => {
           <a href="https://github.com/bartoszrajchert/bartoszrajchert.github.io">
             Handcoded
           </a>{' '}
-          with ♥ by Bartosz Rajchert © 2022 All Rights Reserved
+          with ♥ by Bartosz Rajchert © 2023 All Rights Reserved
         </p>
       </div>
     </footer>
