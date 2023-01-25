@@ -14,9 +14,9 @@ const TimelineRecord = ({ title, description, date }: TimelineRecordProps) => {
           {date}
         </p>
       </div>
-      <div className="space-y-1">
+      <div className="space-y-2">
         <h2 className="text-header-sm">{title}</h2>
-        <p>{description}</p>
+        <p className="opacity-90">{description}</p>
       </div>
     </div>
   );

@@ -18,11 +18,11 @@ const SocialButtons = ({ text = true }: Props) => {
       </Button>
       <Button href="https://github.com/bartoszrajchert">
         <IconBrandGithub />
-        {text && ' Github'}
+        <span className="hidden sm:inline">{text && ' Github'}</span>
       </Button>
       <Button href="https://medium.com/@bartosz.rajchert">
         <IconBrandMedium />
-        {text && ' Medium'}
+        <span className="hidden sm:inline">{text && ' Medium'}</span>
       </Button>
     </div>
   );
