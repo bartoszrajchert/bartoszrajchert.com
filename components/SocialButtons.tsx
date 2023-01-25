@@ -1,5 +1,4 @@
 import {
-  IconAt,
   IconBrandGithub,
   IconBrandLinkedin,
   IconBrandMedium
@@ -9,16 +8,13 @@ import Button from '@components/Button';
 const SocialButtons = () => {
   return (
     <div className="flex gap-3">
-      <Button onClick={() => console.log('At')}>
-        <IconAt />
-      </Button>
-      <Button onClick={() => console.log('Linkedin')}>
+      <Button href="https://www.linkedin.com/in/bartoszrajchert/">
         <IconBrandLinkedin />
       </Button>
-      <Button onClick={() => console.log('Github')}>
+      <Button href="https://github.com/bartoszrajchert">
         <IconBrandGithub />
       </Button>
-      <Button onClick={() => console.log('Medium')}>
+      <Button href="https://medium.com/@bartosz.rajchert">
         <IconBrandMedium />
       </Button>
     </div>

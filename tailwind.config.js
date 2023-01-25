@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}'
+  ],
   theme: {
     colors: {
+      transparent: 'transparent',
       background: '#F8F6F1',
       black: '#0D0D0C',
       white: '#FFF',
@@ -58,7 +62,7 @@ module.exports = {
     },
     borderRadius: {
       DEFAULT: '4px',
-      '8px': '8px',
+      '8px': '8px'
     },
     extend: {}
   },
