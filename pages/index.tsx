@@ -21,10 +21,16 @@ const Home: NextPage = () => {
           <h1 className="mb-3 text-header-md lg:text-header-lg">
             Hello there <span className="wave">👋</span>, I’m Bartosz!
           </h1>
-          <p className="text-body-lg lg:text-body-xl">
+          <p className="text-body-lg opacity-95 lg:text-body-xl">
             I’m currently working as Creative Technologist at{' '}
-            <span className="text-blue-normal">HSBC</span>, bridging the gap
-            between Technology and Design using my knowledge in both fields.
+            <a
+              href="https://www.hsbc.com/"
+              className="font-medium text-blue-normal"
+            >
+              HSBC
+            </a>
+            , bridging the gap between Technology and Design using my knowledge
+            in both fields.
           </p>
           <div className="mt-4 lg:mt-6">
             <SocialButtons />
@@ -33,7 +39,7 @@ const Home: NextPage = () => {
 
         <section>
           <h2 className="mb-6 text-title-md uppercase text-grey-1">Timeline</h2>
-          <div className="space-y-12 sm:space-y-6">
+          <div className="space-y-12 sm:space-y-8">
             {timelineRecords.map((item, i) => (
               <TimelineRecord
                 key={i}

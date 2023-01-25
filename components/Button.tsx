@@ -11,7 +11,7 @@ const Button = ({ children, href, onClick }: Props) => {
     <>
       <a className="no-underline" href={href}>
         <div
-          className="flex cursor-pointer gap-2 rounded border-2 border-transparent bg-blue-light p-3 text-blue-normal hover:border-blue-normal"
+          className="flex cursor-pointer gap-2 rounded border-2 border-transparent bg-blue-light p-3 text-blue-normal hover:border-blue-normal dark:bg-dark-button-background"
           onClick={() => (onClick ? onClick() : null)}
         >
           {children}

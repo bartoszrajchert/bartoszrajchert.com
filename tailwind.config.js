@@ -16,6 +16,11 @@ module.exports = {
       },
       grey: {
         1: '#575252'
+      },
+      dark: {
+        white: '#F6F6FA',
+        background: '#171717',
+        'button-background': '#191919'
       }
     },
     fontSize: {
