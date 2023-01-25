@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
         <div>
           <h2 className="mb-3 text-header-md">Let’s connect</h2>
-          <SocialButtons />
+          <SocialButtons text={false} />
         </div>
       </div>
       <div className="border-t-2 border-background py-6 sm:text-center">
