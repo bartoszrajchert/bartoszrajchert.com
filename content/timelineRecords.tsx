@@ -2,13 +2,26 @@ import { TimelineRecordProps } from '@components/TimelineRecord';
 
 export const timelineRecords: TimelineRecordProps[] = [
   {
+    title: 'Bachelor of Engineering in Computer Science',
+    description: (
+      <>
+        I graduated from 4-year IT studies at the{' '}
+        <a href="https://pja.edu.pl/en/">
+          Polish-Japanese Academy of Information Technology
+        </a>{' '}
+        in Warsaw.
+      </>
+    ),
+    date: 'JULY 2023'
+  },
+  {
     title: (
       <>
         Joined <a href="https://www.hsbc.com/">HSBC</a> as Creative Technologist
       </>
     ),
     description:
-      'Working in the Design System Team - bridging the gap between Design and Technology',
+      'Working in the Design System Team - bridging the gap between Design and Technology.',
     date: 'OCT 2022'
   },
   {
@@ -32,7 +45,7 @@ export const timelineRecords: TimelineRecordProps[] = [
       </>
     ),
     description:
-      'The third version of the most popular site about Counter-Strike: Global Offensive in Poland',
+      'The third version of the most popular site about Counter-Strike: Global Offensive in Poland.',
     date: 'OCT 2020'
   },
   {
@@ -49,14 +62,14 @@ export const timelineRecords: TimelineRecordProps[] = [
         <a href="https://wszystkiegoslodkiego.pl/">Dr Oetker</a>,{' '}
         <a href="https://sklep.drirenaeris.com/">Dr Irena Eris</a>,{' '}
         <a href="https://www.kopalnia.pl/">Kopalnia Soli “Wieliczka”</a>,{' '}
-        <a href="https://aelia.pl/">Aelia</a>
+        <a href="https://aelia.pl/">Aelia</a>.
       </>
     ),
     date: 'JUN 2019'
   },
   {
     title: 'High school graduation',
-    description: 'With an “IT Technician” grade',
+    description: 'With an “IT Technician” title.',
     date: 'MAY 2019'
   },
   {

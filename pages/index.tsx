@@ -29,8 +29,7 @@ const Home: NextPage = () => {
             >
               HSBC
             </a>
-            , bridging the gap between Technology and Design using my knowledge
-            in both fields.
+            , bridging the gap between Design and Technology.
           </p>
           <div className="mt-4 lg:mt-6">
             <SocialButtons />
