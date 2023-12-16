@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <section className="mt-28 mb-16 lg:my-24 lg:mt-12">
+        <section className="mt-28 mb-16 lg:my-28">
           <h1 className="mb-3 text-header-md lg:text-header-lg">
             Hello there <span className="wave">👋</span>, I’m Bartosz!
           </h1>
