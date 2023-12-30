@@ -15,11 +15,11 @@ module.exports = {
         normal: '#0C88FA'
       },
       grey: {
-        1: '#575252'
+        1: '#28292e'
       },
       dark: {
         white: '#F6F6FA',
-        background: '#171717',
+        background: '#111110',
         'button-background': '#191919'
       }
     },
