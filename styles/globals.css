@@ -3,12 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-  html {
-    font-family: IBM Plex Sans, system-ui, sans-serif;
-  }
-
   a {
-    @apply hover:text-blue-normal underline;
+    @apply underline hover:text-blue-normal;
   }
 }
 

@@ -1,34 +1,24 @@
 import { timelineRecords } from '@content/timelineRecords';
 import type { NextPage } from 'next';
-import Head from 'next/head';
 import SocialButtons from '@components/SocialButtons';
 import TimelineRecord from '@components/TimelineRecord';
 
 const Home: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>Bartosz Rajchert Portfolio</title>
-        <meta
-          name="description"
-          content="Bartosz Rajchert Portfolio, Front-end Developer, Product Designer, Design System, Creative Technologist"
-        />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <main>
-        <section className="mt-28 mb-16 lg:my-28">
-          <h1 className="mb-1 text-header-md lg:text-header-lg">
+        <section className="mb-16 mt-28 lg:my-28">
+          <h1 className="text-header-md lg:text-header-lg mb-1">
             Bartosz Rajchert
           </h1>
-          <h2 className="mb-6 text-header-sm lg:text-header-md">
+          <h2 className="text-header-sm lg:text-header-md mb-6">
             Creative Technologist
           </h2>
-          <p className="text-body-lg opacity-95 lg:text-body-xl">
+          <p className="text-body-lg lg:text-body-xl opacity-95">
             I’m currently working as Creative Technologist at{' '}
             <a
               href="https://www.hsbc.com/"
-              className="font-medium text-blue-normal"
+              className="text-blue-normal font-medium"
             >
               HSBC
             </a>
