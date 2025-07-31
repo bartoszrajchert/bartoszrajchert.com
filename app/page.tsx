@@ -45,7 +45,7 @@ const Home: NextPage = () => {
                 <ExternalLinkIcon className="size-3.5 opacity-80" />
               </div>
               <p>
-                Tokun — simple, and easy-to-use tool for working with design
+                Tokun — simple and easy-to-use tool for working with design
                 tokens with powerups.
               </p>
             </div>
@@ -111,7 +111,7 @@ const Home: NextPage = () => {
                 second opinion?
               </h3>
               <p className="opacity-60">
-                I assist you figure out what to create and how to build it. I
+                I can help you figure out what to create and how to build it. I
                 have strong design fundamentals with practical technical
                 expertise, emphasizing the importance of design tokens to make
                 it scalable.
@@ -138,7 +138,7 @@ const Home: NextPage = () => {
             <div className="border border-white/5 p-4">
               <img src="/assets/pwc.svg" alt="PwC" className="pb-4" />
               <div className="flex justify-between pb-2">
-                <p>PwC Cloud & Digital</p>
+                <p>PwC — Cloud & Digital</p>
                 <p>2025 - Present</p>
               </div>
               <p className="opacity-60">
@@ -149,7 +149,7 @@ const Home: NextPage = () => {
             <div className="border border-white/5 p-4">
               <img src="/assets/hsbc.svg" alt="HSBC" className="pb-4" />
               <div className="flex justify-between pb-2">
-                <p>HSBC</p>
+                <p>HSBC — Hive Design System</p>
                 <p>2022 - 2025</p>
               </div>
               <p className="opacity-60">
@@ -177,9 +177,9 @@ const Home: NextPage = () => {
           <h1 className="text-2xs font-mono text-white/80">ABOUT ME</h1>
           <div className="space-y-2">
             <p>
-              From the beginning of my career I was making stuff for big players
+              From the beginning of my career, I was making stuff for big players
               from Fortune 500 list and start-ups. I’ve helped them create
-              better products, workflows and tools.
+              better products, workflows, and tools.
             </p>
             <p>
               I handle everything from brainstorming ideas to UX design and
