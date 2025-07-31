@@ -1,1 +1,1 @@
-[https://bartoszrajchert.github.io/](https://bartoszrajchert.github.io/)
+[https://bartoszrajchert.com/](https://bartoszrajchert.com/)
