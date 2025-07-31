@@ -1,17 +1,55 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
+@theme inline {
+  --font-sans: var(--font-geist);
+  --font-mono: var(--font-geist-mono);
+}
+
+@theme {
+  --color-*: initial;
+  --color-transparent: transparent;
+  --color-background: #f8f6f1;
+  --color-background-highlight: #1a1a1a;
+  --color-black: #0d0d0c;
+  --color-white: #fff;
+
+  --color-blue-light: #e7f3ff;
+  --color-blue-normal: #0c88fa;
+
+  --color-grey-1: #28292e;
+
+  --color-dark-white: #f6f6fa;
+  --color-dark-background: #111110;
+  --color-dark-button-background: #191919;
+
+  --text-2xs: 12px;
+
+  --animate-ping: ping 1.4s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
 @layer base {
-  html {
-    font-family: IBM Plex Sans, system-ui, sans-serif;
-  }
-
-  a {
-    @apply hover:text-blue-normal underline;
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
   }
 }
 
-.page-width-adjustment {
-  @apply max-w-[606px] px-5 sm:mx-auto sm:px-4 xl:px-0;
+.fancy-border {
+  background-image: repeating-linear-gradient(
+    315deg,
+    currentColor 0 1px,
+    #0000 0 50%
+  );
 }
