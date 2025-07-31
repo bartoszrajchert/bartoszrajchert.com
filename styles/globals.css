@@ -1,12 +1,16 @@
 @import 'tailwindcss';
+@import 'tw-animate-css';
+
+@theme inline {
+  --font-sans: var(--font-geist);
+  --font-mono: var(--font-geist-mono);
+}
 
 @theme {
-  --font-*: initial;
-  --font-sans: IBM Plex Sans, system-ui, sans-serif;
-
   --color-*: initial;
   --color-transparent: transparent;
   --color-background: #f8f6f1;
+  --color-background-highlight: #1a1a1a;
   --color-black: #0d0d0c;
   --color-white: #fff;
 
@@ -19,36 +23,9 @@
   --color-dark-background: #111110;
   --color-dark-button-background: #191919;
 
-  --text-*: initial;
-  --text-header-lg: 39px;
-  --text-header-lg--line-height: 120%;
-  --text-header-lg--font-weight: 500;
-  --text-header-md: 25px;
-  --text-header-md--line-height: 120%;
-  --text-header-md--font-weight: 500;
-  --text-header-sm: 20px;
-  --text-header-sm--line-height: 120%;
-  --text-header-sm--font-weight: 500;
-  --text-title-lg: 16px;
-  --text-title-lg--line-height: 140%;
-  --text-title-lg--font-weight: 500;
-  --text-title-md: 13px;
-  --text-title-md--line-height: 140%;
-  --text-title-md--font-weight: 500;
-  --text-body-xl: 20px;
-  --text-body-xl--line-height: 140%;
-  --text-body-lg: 16px;
-  --text-body-lg--line-height: 160%;
-  --text-body-md: 13px;
-  --text-body-md--line-height: 140%;
-  --text-body-sm: 10px;
-  --text-body-sm--line-height: 120%;
-  --text-base: 16px;
-  --text-base--line-height: 160%;
+  --text-2xs: 12px;
 
-  --radius-*: initial;
-  --radius: 4px;
-  --radius-8px: 8px;
+  --animate-ping: ping 1.4s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
 /*
@@ -69,12 +46,10 @@
   }
 }
 
-@layer base {
-  a {
-    @apply underline hover:text-blue-normal;
-  }
-}
-
-.page-width-adjustment {
-  @apply max-w-[606px] px-5 sm:mx-auto sm:px-4 xl:px-0;
+.fancy-border {
+  background-image: repeating-linear-gradient(
+    315deg,
+    currentColor 0 1px,
+    #0000 0 50%
+  );
 }

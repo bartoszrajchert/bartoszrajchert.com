@@ -1,26 +1,31 @@
 'use client';
 
+import { cn } from 'lib/utils';
 import React from 'react';
 
 interface Props {
   children: React.ReactNode;
+  className?: string;
   onClick?: Function;
   href?: string;
 }
 
-const Button = ({ children, href, onClick }: Props) => {
+function Button({ children, href, onClick, className }: Props) {
   return (
-    <>
-      <a className="no-underline" href={href}>
-        <div
-          className="flex cursor-pointer gap-2 rounded border-2 border-transparent bg-blue-light p-3 text-blue-normal hover:border-blue-normal dark:bg-dark-button-background"
-          onClick={() => (onClick ? onClick() : null)}
-        >
-          {children}
-        </div>
-      </a>
-    </>
+    <a
+      className={cn('no-underline', className)}
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <div
+        className="bg-blue-light text-blue-normal hover:border-blue-normal dark:bg-dark-button-background flex cursor-pointer items-center justify-center gap-2 rounded border-2 border-transparent p-2 transition-all duration-150"
+        onClick={() => (onClick ? onClick() : null)}
+      >
+        {children}
+      </div>
+    </a>
   );
-};
+}
 
 export default Button;
