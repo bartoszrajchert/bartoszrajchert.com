@@ -1,8 +1,8 @@
+import BackgroundAmbient from '@/components/BackgroundAmbient';
+import Navigation from '@/components/Navigation';
+import '@/styles/globals.css';
 import { Geist, Geist_Mono } from 'next/font/google';
 import Head from 'next/head';
-import BackgroundAmbient from '@components/BackgroundAmbient';
-import Navigation from '@components/Navigation';
-import '@styles/globals.css';
 
 export const metadata = {
   title: 'Bartosz Rajchert Portfolio',

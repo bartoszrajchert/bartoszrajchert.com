@@ -4,13 +4,13 @@ import {
   IconBrandMedium
 } from '@tabler/icons';
 import clsx from 'clsx';
-import Button from '@components/Button';
+import Button from '@/components/Button';
 
 type Props = {
   text?: boolean;
 };
 
-const SocialButtons = ({ text = true }: Props) => {
+export default function SocialButtons({ text = true }: Props) {
   const clsxClass = clsx('hidden', text && 'sm:inline', !text && 'hidden');
 
   return (
@@ -29,6 +29,4 @@ const SocialButtons = ({ text = true }: Props) => {
       </Button>
     </div>
   );
-};
-
-export default SocialButtons;
+}

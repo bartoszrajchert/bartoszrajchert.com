@@ -1,12 +1,32 @@
+'use client';
+
 import InlineSVG from 'react-inlinesvg';
+import { SparklesCore } from './ui/sparkles';
+import { motion } from 'motion/react';
 
-const BackgroundAmbient = () => {
+export default function BackgroundAmbient() {
   return (
-    <InlineSVG
-      className="absolute left-0 right-0 top-0 -z-10 h-auto w-full"
-      src="/assets/background-ambient.svg"
-    />
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      <InlineSVG
+        className="absolute left-0 right-0 top-0 -z-10 h-auto w-full"
+        src="/assets/background-ambient.svg"
+      />
+      <div className="absolute inset-0 h-[25vh] w-[65vw] opacity-20 mx-auto">
+        <SparklesCore
+          id="tsparticlesfullpage"
+          background="transparent"
+          minSize={0.6}
+          maxSize={1.4}
+          particleDensity={75}
+          className="h-full w-full"
+          particleColor="#FFFFFF"
+        />
+      </div>
+    </motion.div>
+    
   );
-};
-
-export default BackgroundAmbient;
+}

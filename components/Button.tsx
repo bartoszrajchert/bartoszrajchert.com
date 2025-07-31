@@ -1,6 +1,6 @@
 'use client';
 
-import { cn } from 'lib/utils';
+import { cn } from '@/lib/utils';
 import React from 'react';
 
 interface Props {
@@ -10,7 +10,7 @@ interface Props {
   href?: string;
 }
 
-function Button({ children, href, onClick, className }: Props) {
+export default function Button({ children, href, onClick, className }: Props) {
   return (
     <a
       className={cn('no-underline', className)}
@@ -27,5 +27,3 @@ function Button({ children, href, onClick, className }: Props) {
     </a>
   );
 }
-
-export default Button;

@@ -1,6 +1,6 @@
+import SocialButtons from '@/components/SocialButtons';
 import { CornerDownRightIcon, ExternalLinkIcon } from 'lucide-react';
 import type { NextPage } from 'next';
-import SocialButtons from '@components/SocialButtons';
 
 const Home: NextPage = () => {
   return (
