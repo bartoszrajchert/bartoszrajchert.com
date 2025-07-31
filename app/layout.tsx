@@ -33,7 +33,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body
-        className={`${geist.variable} ${geistMono.variable} bg-background dark:bg-dark-background dark:text-dark-white font-sans`}
+        className={`${geist.variable} ${geistMono.variable} bg-dark-background text-dark-white font-sans`}
       >
         <Navigation />
         <BackgroundAmbient />

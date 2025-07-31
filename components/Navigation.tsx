@@ -15,7 +15,7 @@ export default function Navigation() {
   }, []);
 
   return (
-    <div className={`w-full transition-colors duration-75 border-white/10 border-b px-4 sticky top-0 z-10 ${isScrolled ? 'dark:bg-dark-background/60 backdrop-blur-sm' : ''}`}>
+    <div className={`w-full transition-colors duration-75 border-white/10 border-b px-4 sticky top-0 z-10 ${isScrolled ? 'bg-dark-background/60 backdrop-blur-sm' : ''}`}>
       <div className="m-auto max-w-[456px] flex justify-between items-center px-4 border-white/10 py-3 border-l border-r border-dashed">
         <div className="flex gap-2 items-center text-[15px]">
           <h1 className="font-bold">Bartosz Rajchert</h1>

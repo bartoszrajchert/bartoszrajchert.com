@@ -19,7 +19,7 @@ export default function Button({ children, href, onClick, className }: Props) {
       rel="noopener noreferrer"
     >
       <div
-        className="bg-blue-light text-blue-normal hover:border-blue-normal dark:bg-dark-button-background flex cursor-pointer items-center justify-center gap-2 rounded border-2 border-transparent p-2 transition-all duration-150"
+        className="flex cursor-pointer items-center justify-center gap-2 rounded border-2 border-transparent bg-blue-light bg-dark-button-background p-2 text-blue-normal transition-all duration-150 hover:border-blue-normal"
         onClick={() => (onClick ? onClick() : null)}
       >
         {children}
