@@ -27,10 +27,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const fancy = (
-    <div className="bg-size-[10px_10px] h-full w-[24px] shrink-0 border-l border-r bg-[repeating-linear-gradient(315deg,currentColor_0,currentColor_1px,transparent_0,transparent_50%)] bg-fixed"></div>
-  );
-
   return (
     <html lang="en">
       <Head>
