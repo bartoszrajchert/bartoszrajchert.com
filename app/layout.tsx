@@ -36,12 +36,12 @@ export default function RootLayout({
         className={`${geist.variable} ${geistMono.variable} bg-dark-background text-dark-white font-sans`}
       >
         <Navigation />
-        <BackgroundAmbient />
         <div className="mx-auto max-w-[calc(456px+2rem)]">
           <div className="mx-4 border-l border-r border-dashed border-white/10 px-4 pb-[40px] pt-[40px]">
             {children}
           </div>
         </div>
+        <BackgroundAmbient />
       </body>
     </html>
   );

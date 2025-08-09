@@ -139,7 +139,7 @@ const Home: NextPage = () => {
               <img src="/assets/pwc.svg" alt="PwC" className="pb-4" />
               <div className="flex justify-between pb-2">
                 <p>PwC — Cloud & Digital</p>
-                <p>2025 - Present</p>
+                <p className='text-nowrap'>2025 - Present</p>
               </div>
               <p className="opacity-60">
                 Cloud Delivery Senior Engineer with focus on Front-End
@@ -150,7 +150,7 @@ const Home: NextPage = () => {
               <img src="/assets/hsbc.svg" alt="HSBC" className="pb-4" />
               <div className="flex justify-between pb-2">
                 <p>HSBC — Hive Design System</p>
-                <p>2022 - 2025</p>
+                <p className='text-nowrap'>2022 - 2025</p>
               </div>
               <p className="opacity-60">
                 Creative Technologist working on bridging the gap between design
@@ -165,7 +165,7 @@ const Home: NextPage = () => {
               />
               <div className="flex justify-between pb-2">
                 <p>Accenture Song</p>
-                <p>2020 - 2022</p>
+                <p className='text-nowrap'>2020 - 2022</p>
               </div>
               <p className="opacity-60">
                 Product Designer with technology skills.
