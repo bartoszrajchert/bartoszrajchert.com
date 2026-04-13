@@ -13,15 +13,15 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
 
-      - name: Setup pnpm 📦
-        uses: pnpm/action-setup@v4
+      - name: Setup Bun 🍞
+        uses: oven-sh/setup-bun@v2
         with:
-          version: 9.5.0
+          bun-version: 1.3.10
 
-      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+      - name: Install and Build 🔧
         run: |
-          pnpm install --frozen-lockfile
-          npm run build
+          bun install --frozen-lockfile
+          bun run build
 
       - name: Bypass Jekyll 🛑
         run: touch ./out/.nojekyll

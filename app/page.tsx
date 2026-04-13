@@ -9,11 +9,7 @@ const Home: NextPage = () => {
         <section className="space-y-4">
           <div className="flex gap-2">
             <div className="space-y-3">
-              <img
-                src="/assets/hi-there.svg"
-                alt="Hi there"
-                className="w-[120px]"
-              />
+              <h1 className='font-title text-4xl'>Hi There!</h1>
               <p className="text-[15px]">
                 Welcome on my personal space, I’m Bartosz Rajchert. Here you can
                 browse my current CV, projects, past projects, see some

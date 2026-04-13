@@ -2,7 +2,7 @@ import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconBrandMedium
-} from '@tabler/icons';
+} from '@tabler/icons-react';
 import clsx from 'clsx';
 import Button from '@/components/Button';
 

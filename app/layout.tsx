@@ -1,7 +1,7 @@
 import BackgroundAmbient from '@/components/BackgroundAmbient';
 import Navigation from '@/components/Navigation';
 import '@/styles/globals.css';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { EB_Garamond, Inter } from 'next/font/google';
 import Head from 'next/head';
 
 export const metadata = {
@@ -10,16 +10,16 @@ export const metadata = {
     'Bartosz Rajchert Portfolio, Front-end Developer, Product Designer, Design System, Creative Technologist'
 };
 
-const geist = Geist({
+const inter = Inter({
   subsets: ['latin'],
   weight: ['400', '600'],
-  variable: '--font-geist'
+  variable: '--font-inter'
 });
 
-const geistMono = Geist_Mono({
+const ebGaramond = EB_Garamond({
   subsets: ['latin'],
-  weight: ['400'],
-  variable: '--font-geist-mono'
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-eb-garamond'
 });
 
 export default function RootLayout({
@@ -33,7 +33,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body
-        className={`${geist.variable} ${geistMono.variable} bg-dark-background text-dark-white font-sans`}
+        className={`${inter.variable} ${ebGaramond.variable} bg-dark-background text-dark-white font-sans`}
       >
         <Navigation />
         <div className="mx-auto max-w-[calc(456px+2rem)]">
