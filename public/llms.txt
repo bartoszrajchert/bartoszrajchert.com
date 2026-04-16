@@ -1,0 +1,34 @@
+# Bartosz Rajchert
+
+Software / Design Engineer
+
+Building software with a focus on design, usability, and function.
+
+I work at [PwC in the Cloud & Digital](https://www.pwc.com/) department, where I create digital products based on cloud solutions, which I enrich with an intuitive interface.
+
+I consider myself a designer at heart with high technical skills, and enjoy building highly polished products.
+
+You can reach me on [X](https://x.com/bartoszrajchert) or by [LinkedIn](https://www.linkedin.com/in/bartoszrajchert/).
+
+Check out my cool open-source projects on [GitHub](https://github.com/bartoszrajchert).
+
+## Projects
+
+### OpenBase
+
+Is a desktop database workspace. It supports popular SQL dialects for schema browsing, query execution, relationship visualization, and more.
+
+https://github.com/bartoszrajchert/openbase
+
+### Tokun
+
+The simple, and easy-to-use tool for working with design tokens with powerups. It can support you building themes and using it in multiple platforms.
+
+https://tokun.bartoszrajchert.com/
+
+## Companies
+
+- [PwC](https://www.pwc.com/)
+- [HSBC](https://www.hsbc.com/)
+- [Accenture](https://www.accenture.com/)
+- [Move Closer](https://movecloser.co/)
