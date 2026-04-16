@@ -1,47 +1,47 @@
-import BackgroundAmbient from '@/components/BackgroundAmbient';
-import Navigation from '@/components/Navigation';
+import { Footer } from '@/components/footer';
+import { PageStaggerMotion } from '@/components/page-stagger-motion';
+import { ThemeProvider } from '@/components/theme-provider';
 import '@/styles/globals.css';
-import { EB_Garamond, Inter } from 'next/font/google';
-import Head from 'next/head';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Bartosz Rajchert Portfolio',
   description:
-    'Bartosz Rajchert Portfolio, Front-end Developer, Product Designer, Design System, Creative Technologist'
+    'Bartosz Rajchert Portfolio, Front-end Developer, Product Designer, Design System, Creative Technologist',
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 const inter = Inter({
   subsets: ['latin'],
-  weight: ['400', '600'],
-  variable: '--font-inter'
-});
-
-const ebGaramond = EB_Garamond({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700'],
-  variable: '--font-eb-garamond'
+  weight: 'variable',
+  variable: '--font-inter',
 });
 
 export default function RootLayout({
-  children
+  children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${inter.variable} ${ebGaramond.variable} bg-dark-background text-dark-white font-sans`}
+        className={`${inter.variable} bg-background dark:bg-dark-background text-foreground dark:text-dark-white font-sans`}
       >
-        <Navigation />
-        <div className="mx-auto max-w-[calc(456px+2rem)]">
-          <div className="mx-4 border-l border-r border-dashed border-white/10 px-4 pb-[40px] pt-[40px]">
+        <PageStaggerMotion />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <div className="mx-auto max-w-[60ch] space-y-14 pt-[40px] pb-[40px]">
             {children}
+            <Footer />
           </div>
-        </div>
-        <BackgroundAmbient />
+        </ThemeProvider>
       </body>
     </html>
   );
