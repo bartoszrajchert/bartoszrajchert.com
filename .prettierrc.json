@@ -2,17 +2,5 @@
   "tabWidth": 2,
   "semi": true,
   "singleQuote": true,
-  "trailingComma": "none",
-  "bracketSpacing": true,
-  "arrowParens": "always",
-  "requirePragma": false,
-  "insertPragma": false,
-  "importOrder": [
-    "^@(components|styles)/?(.*)$",
-    "^[./]"
-  ],
-  "plugins": [
-    "@trivago/prettier-plugin-sort-imports",
-    "prettier-plugin-tailwindcss"
-  ]
+  "plugins": ["prettier-plugin-organize-imports", "prettier-plugin-tailwindcss"]
 }
