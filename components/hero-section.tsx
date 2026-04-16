@@ -2,7 +2,7 @@ import { InlineLink } from './inline-link';
 
 export function HeroSection() {
   return (
-    <section className="space-y-12">
+    <section className="space-y-8">
       <header className="stagger-item flex items-center justify-between">
         <div className="flex items-center gap-4">
           <img
@@ -11,7 +11,7 @@ export function HeroSection() {
             alt="Bartosz Rajchert"
           />
           <div>
-            <h1>Bartosz Rajchert</h1>
+            <h1 className="leading-5 font-[460]">Bartosz Rajchert</h1>
             <p className="text-primary/80 text-sm tracking-[0.2px]">
               Software / Design Engineer
             </p>
