@@ -1,6 +1,6 @@
 {
   "name": "bartosz-rajchert-website",
-  "version": "2.0.4",
+  "version": "3.0.0",
   "private": true,
   "packageManager": "bun@1.3.10",
   "scripts": {
