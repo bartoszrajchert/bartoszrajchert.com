@@ -32,7 +32,7 @@ export function CompaniesSection() {
   return (
     <section>
       <h1 className="stagger-item text-primary mb-5 font-[500]">Companies</h1>
-      <div className="flex flex-wrap items-stretch justify-center gap-1 sm:flex-nowrap sm:justify-between">
+      <div className="grid grid-cols-2 gap-1 sm:grid-cols-4">
         {companies.map(({ lightSrc, darkSrc, alt, href, className }) => (
           <a
             key={alt}
