@@ -1,3 +1,4 @@
+import { GitHubHoverCard } from './github-hover-card';
 import { InlineLink } from './inline-link';
 
 export function HeroSection() {
@@ -44,10 +45,7 @@ export function HeroSection() {
         </p>
         <p className="stagger-item">
           Check out my cool open-source projects on{' '}
-          <InlineLink href="https://github.com/bartoszrajchert">
-            GitHub
-          </InlineLink>
-          .
+          <GitHubHoverCard>GitHub</GitHubHoverCard>.
         </p>
       </div>
     </section>
