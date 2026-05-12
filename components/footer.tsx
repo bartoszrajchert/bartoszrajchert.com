@@ -59,17 +59,6 @@ function WarsawTimer() {
     };
   }, []);
 
-  useEffect(() => {
-    const onShow = (e: PageTransitionEvent) =>
-      console.log('pageshow', e.persisted);
-    const onHide = (e: PageTransitionEvent) =>
-      console.log('pagehide', e.persisted);
-    const onVis = () => console.log('visibility', document.visibilityState);
-    window.addEventListener('pageshow', onShow);
-    window.addEventListener('pagehide', onHide);
-    document.addEventListener('visibilitychange', onVis);
-  }, []);
-
   return (
     <p className="text-sm tabular-nums">
       <NumberFlow
